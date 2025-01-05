@@ -27,7 +27,7 @@ open class UIPiPView: UIView,
     /// Created in lazy because there is a problem with screen grayout
     /// when generating synchronously before PiP starts.
     /// Possible bug in iOS 16.
-    private lazy var pipController: AVPictureInPictureController? = {
+    public lazy var pipController: AVPictureInPictureController? = {
         if UIPiPView.isUIPiPViewSupported(), #available(iOS 15.0, *) {
             let controller = AVPictureInPictureController(contentSource: .init(
                 sampleBufferDisplayLayer: pipBufferDisplayLayer,
