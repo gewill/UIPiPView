@@ -23,8 +23,5 @@ let package = Package(
             name: "UIPiPView",
             dependencies: [],
             path: "UIPiPView/Classes"),
-        .testTarget(
-            name: "UIPiPViewTests",
-            dependencies: ["UIPiPView"]),
     ]
 )
